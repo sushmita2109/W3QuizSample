@@ -28,7 +28,9 @@ document.getElementById("btn").onclick = function () {
     nextBtn.textContent = "Next Question >>";
     nextBtn.style.marginTop = "10px";
     nextBtn.onclick = function () {
-      alert("Next question logic goes here!");
+      document.querySelector(".quiz").style.display = "block";
+      questionBox.style.backgroundColor = "transparent";
+      result.textContent = "";
     };
     result.appendChild(document.createElement("br"));
     result.appendChild(nextBtn);
@@ -42,7 +44,9 @@ document.getElementById("btn").onclick = function () {
     prevQues.textContent = "Same Question >>";
     prevQues.style.marginTop = "10px";
     prevQues.onclick = function () {
-      alert("Next question logic goes here!");
+      document.querySelector(".quiz").style.display = "block";
+      questionBox.style.backgroundColor = "transparent";
+      result.textContent = "";
     };
     result.appendChild(document.createElement("br"));
     result.appendChild(prevQues);
