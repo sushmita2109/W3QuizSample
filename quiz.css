@@ -14,8 +14,12 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 60%;
   margin: 5px;
+  height: 40vh;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px auto;
 }
 
 li {

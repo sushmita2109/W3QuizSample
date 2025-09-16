@@ -19,6 +19,7 @@ document.getElementById("btn").onclick = function () {
   }
 
   if (selectedValue === "background-image") {
+    document.querySelector(".quiz").style.display = "none";
     questionBox.style.backgroundColor = "green";
     result.textContent = "Correct!";
     result.style.color = "white";
@@ -32,9 +33,19 @@ document.getElementById("btn").onclick = function () {
     result.appendChild(document.createElement("br"));
     result.appendChild(nextBtn);
   } else {
+    document.querySelector(".quiz").style.display = "none";
     result.textContent = " Incorrect, try again.";
     result.style.color = "white";
     questionBox.style.backgroundColor = "red";
+
+    let prevQues = document.createElement("button");
+    prevQues.textContent = "Same Question >>";
+    prevQues.style.marginTop = "10px";
+    prevQues.onclick = function () {
+      alert("Next question logic goes here!");
+    };
+    result.appendChild(document.createElement("br"));
+    result.appendChild(prevQues);
   }
 };
 document.getElementById("close-btn").onclick = function () {
